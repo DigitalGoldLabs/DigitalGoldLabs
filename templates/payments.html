@@ -24,7 +24,7 @@
           <div class="uk-container uk-container-expand">
             <nav class="uk-navbar">
               <div class="uk-navbar-left">
-                <a href="/" class="uk-navbar-item uk-logo router-link-exact-active uk-active"><!--<canvas width="28" height="34" uk-svg="" src="../static/images/DGL_dark.png" class="uk-margin-small-right" hidden="true"></canvas>-->
+                <a href="/" class="uk-navbar-item uk-logo router-link-exact-active uk-active">
                   <img src="../static/images/DGL_logotextDark.png" width="225" height="93" viewBox="0 0 28 34" xmlns="http://www.w3.org/2000/svg" ratio="1" class="uk-margin-small-right uk-svg">
                 </a>
               </div>
@@ -32,9 +32,10 @@
                 <ul class="uk-navbar-nav uk-visible@m">
                   <li class=""><a href="#modal-about" uk-toggle>About us</a></li>
                   <li><a href="#modal-support" uk-toggle>Support</a></li>
+                  <li><a href="#modal-sales" uk-toggle>Sales</a></li>
                 </ul>
                 <div class="uk-navbar-item uk-visible@m">
-                  <a href="/payments" class="uk-button uk-button-default tm-button-default uk-icon" uk-toggle>Payments
+                  <a href="#modal-support" class="uk-button uk-button-default tm-button-default uk-icon" uk-toggle>Payments
                     <canvas uk-icon="icon: cart" width="20" height="20" class="uk-icon" hidden="true"></canvas>
                   </a>
                 </div>
@@ -47,15 +48,13 @@
         <div uk-height-viewport="offset-top: true; offset-bottom: true" class="uk-section uk-section-small uk-flex uk-flex-top uk-text-center" style="box-sizing: border-box; min-height: calc(-183px + 100vh); height: calc(-183px + 100vh);">
           <div class="uk-width-1-1">
             <div class="uk-container">
-              <p class="uk-margin-none uk-text-lead"><!--<img src="../static/images/DGLblack.png" width="100" height="93">-->
-                Payment Method
-              </p>
+              <p class="uk-margin-none uk-text-lead">Payment Method</p>
               <hr>
                   <div>
                     <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
                       <div>
                           <div class="uk-card uk-card-large uk-card-body uk-card-hover">
-                              <h3 class="uk-card-title"><a class="uk-link-heading" href="payments.html" uk-toggle>Cryptocurrency</a></h3>
+                              <h3 class="uk-card-title"><a class="uk-link-heading" href="/payments" uk-toggle>Cryptocurrency</a></h3>
                               <p><div class="uk-text-meta">Real-time, cost effective business transactions using 55+ different cryptocurrencies. </div>
                                 <button class="uk-button uk-button-primary uk-margin" disabled>Coming Soon</button></p>
                               <!--<a class="uk-button uk-button-primary uk-position-bottom-center uk-margin-bottom" href="#modal-solutions" uk-toggle>Learn more</a>-->
@@ -63,7 +62,7 @@
                       </div>
                       <div>
                           <div class="uk-card uk-card-large uk-card-body uk-card-hover">
-                              <h3 class="uk-card-title"><a class="uk-link-heading" href="payments.html" uk-toggle>Debit/Credit/ACH</a></h3>
+                              <h3 class="uk-card-title"><a class="uk-link-heading" href="/payments" uk-toggle>Debit/Credit/ACH</a></h3>
                               <p class="uk-margin-bottom">Visa, MasterCard, American Express, JCB, Discover or ACH Bank Transfer.</p>
                               <button class="uk-button uk-button-primary uk-margin" disabled>Coming Soon</button></p>
                               <!--<a class="uk-button uk-button-primary uk-position-bottom-center uk-margin-bottom" href="#modal-sales" uk-toggle>Contact Sales</a>-->
@@ -83,6 +82,10 @@
               <li>
                 <a href="#modal-support" uk-toggle><span uk-icon="icon: lifesaver" class="uk-margin-small-right uk-icon">
                 </span>Support</a>
+              </li>
+              <li>
+                <a href="#modal-sales" uk-toggle><span uk-icon="icon: future" class="uk-margin-small-right uk-icon">
+                </span>Sales</a>
               </li>
               <li>
                 <a href="#modal-contact" uk-toggle><span uk-icon="icon: commenting" class="uk-margin-small-right uk-icon"></span>
@@ -147,138 +150,5 @@
           <p>Hours: 08:00-17:00 MST (UTC -07:00)</p>
       </div>
     </div>
-
-    <div id="modal-solutions" class="uk-modal-full" uk-modal>
-        <div class="uk-modal-dialog">
-          <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-            <div uk-height-viewport="offset-top: true; offset-bottom: true" class="uk-section uk-section-small uk-flex uk-flex-top uk-text-center" style="box-sizing: border-box; min-height: calc(-183px + 100vh); height: calc(-183px + 100vh);">
-              <div class="uk-width-1-1">
-                <div class="uk-container">
-                  <div class="uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
-                    <div>
-                      <div>
-                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                          <div>
-                              <div class="uk-card uk-card-large uk-card-body uk-card-hover">
-                                  <h3 class="uk-card-title">Account Verification</a></h3>
-                                  <p>Verify your new users are humans with accurate contact information via a one-time passcode.</p>
-                              </div>
-                          </div>
-                          <div>
-                              <div class="uk-card uk-card-large uk-card-hover uk-card-body">
-                                  <h3 class="uk-card-title">Appointment Reminders</a></h3>
-                                  <p>Automatically confirm upcoming appointments.</p>
-                              </div>
-                          </div>
-                          <div>
-                              <div class="uk-card uk-card-large uk-card-body uk-card-hover">
-                                  <h3 class="uk-card-title">Automated Surveys</a></h3>
-                                  <p class="uk-margin-bottom">Get immediate feedback to create improved customer experiences.</p>
-                              </div>
-                          </div>
-                          <div>
-                              <div class="uk-card uk-card-large uk-card-body uk-card-hover">
-                                  <h3 class="uk-card-title">Customer Reviews</a></h3>
-                                  <p class="uk-margin-bottom">Increase your online engagement with real, positive customer reviews while privately receiving the negative reviews.</p>
-                              </div>
-                          </div>
-                          <div>
-                              <div class="uk-card uk-card-large uk-card-body uk-card-hover">
-                                  <h3 class="uk-card-title">SMS/MMS Marketing</a></h3>
-                                  <p class="uk-margin-bottom">Opt-in SMS/MMS marketing campaign with open rates of 95%+.</p>
-                              </div>
-                          </div>
-                          <div>
-                              <div class="uk-card uk-card-large uk-card-body uk-card-hover">
-                                  <h3 class="uk-card-title">Two Factor Authenication</a></h3>
-                                  <p class="uk-margin-bottom">Keep you user accounts secure via SMS 2FA codes.</p>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <hr>
-
-
-                        <div class="uk-card uk-card-large uk-card-body">
-                            <h3 class="uk-card-title">What industries do we work in?</a></h3>
-                            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Retail</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Education</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Healthcare</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Fitness</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Auctions</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Hospitality</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Communities</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Non-Profits</a></h3>
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="uk-card uk-card-small uk-card-primary uk-card-body uk-card-hover">
-                                      <h3 class="uk-card-title">Associations</a></h3>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div id="modal-crypto" class="uk-modal-full" uk-modal>
-        <div class="uk-modal-dialog">
-            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-              <div class="uk-padding-large">
-                  <h1 class="uk-text-primary">Cryptocurrency Services</h1>
-                  <p>Consumers demand payment convience, which is the foundation of cryptocurrencies.<br>
-                    <ul class="uk-list uk-list-divider">
-                        <li><div class="uk-text-bold">New Customer Traffic Increase:</div> Passionate cryptocurrency enthusiasts choose stores that accept it</li>
-                        <li><div class="uk-text-bold">Cost Effective Business Transactions:</div> Cryptocurrencies cut out the middleman, therefore increasing your profits</li>
-                        <li><div class="uk-text-bold">Real-time Processing without Chargebacks:</div> Avoid long transactions while securing them through cryptography</li>
-                        <li><div class="uk-text-bold">Customer Choice:</div> Accept 55+ different cryptocurrencies</li>
-                    </ul>
-
-                  </p>
-              </div>
-              <div class="uk-background-cover" style="background-image: url('../static/images/DGL_BlackBG.png');" uk-height-viewport>
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
   </body>
 </html>
